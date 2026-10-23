@@ -1,0 +1,44 @@
+<html>
+<head>
+<style>
+.error{
+background-color:yellow;
+color:red;
+display:block;
+}
+</style>
+</head>
+<body>
+<div style="width:500px; margin:0 auto;" >
+<form action="submit.py" onsubmit="return form_val();" >
+<p>
+  <label>Enter first name</label> <input type="text" id="fname" onblur="fname_val();" />
+  <span id="fname_err"></span>
+
+</p>
+<p>
+  <label>Enter  last name</label> <input type="text" id="lname" />
+  <span id="lname_err"></span>
+
+</p>
+<p>
+  <label>Enter  Email</label> <input type="email" id="email" />
+  <span id="email_err"></span>
+
+</p>
+<p>
+  <label>Enter  Password</label> <input type="password" id="password" />
+  <span id="pass_err"></span>
+
+</p>
+
+<p>
+  <input type="submit" value="Sign up" />
+</p>
+</form>
+</div>
+
+</body>
+</html>
+
+<script src="validation.js"></script>
